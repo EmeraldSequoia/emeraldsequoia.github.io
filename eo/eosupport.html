@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Emerald Observatory Support</title>
+ <meta name="viewport" content="width=device-width" />  <!-- for iphone -->
+ <link rel="apple-touch-icon" href="../images/eblogo57-1.png">
+ <link rel="shortcut icon" href="../images/GlyphBerry.png" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../h/product.css" type="text/css" />
+</head>
+<body>
+<div class='floatL'>
+ <a href="../index.php">Home</a>&nbsp;&nbsp;
+ <a href="index.html">Observatory</a>
+</div>
+<div class='floatR'>
+<div class='floatR'><a href="http://itunes.apple.com/us/app/emerald-observatory-for-ipad/id364904759?mt=8">Buy Now</a></div>
+</div>
+<br>
+<div class="shutdown-message-container">
+  <div class="shutdown-message">
+    <p>Emerald Sequoia LLC will be shutting down at the end of 2023. Please see our blog post
+    <a href="https://emeraldsequoia.com/esblog/2022/12/21/emerald-sequoias-future/">here</a>.
+    <p>
+    Thanks for all of your support over the past 15 years!</div>
+</div>
+<hr size=1>
+
+<table><tr>
+<td width=25%>
+&nbsp;
+</td>
+
+<td width=50%>
+<h1>Emerald Observatory for iPad Support</h1>
+<div style='text-align:center; width: 100%'>
+<img src="melted.png">
+</div>
+</td>
+
+<td width=25% valign=top align=right>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+}
+</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</td>
+</tr></table>
+
+<p>
+
+
+<h3>FAQ</h3>
+<dl>
+
+<dt> Will it work on an iPhone™ or iPod<span style="font-size:6pt; vertical-align: super">®</span> touch?
+</dt>
+<dd> No.  But we're thinking about it...
+<p>
+</dd>
+
+<dt> Will it work on a Mac or a PC or any other smart phone?
+</dt>
+<dd> No.
+<p>
+</dd>
+
+<dt> Will Emerald Observatory work without an Internet connection?
+</dt>
+<dd>Yes. But the time may be somewhat inaccurate and you may have to set your location manually.
+<p>
+</dd>
+
+<dt> The alarm doesn't work if Observatory is in the background or if the screen is locked (iOS 5 or later).
+</dt>
+<dd>Go to the Settings app, choose the Notifications item on the left side, and scroll down on the right side until you see "Observatory".
+Tap on it and then turn on the switch for "Sounds".  That will allow the alarm sound to play even when Observatory is not active.
+<p>
+</dd>
+
+<dt> The alarm is difficult (or impossible) to hear.
+</dt>
+<dd>There are several possibilities for this.  You can use the "Test" button on the Info page to assist in debugging.
+<p>First, note that with the iOS 4.2 update, Apple changed the meaning of the hardware button near the volume keys; prior to 4.2, that button meant "lock orientation"; now it means "mute", as it does on the iPhone.  (Though a Setting to control which meaning is assigned was added in iOS 4.3).  So make sure that the switch is positioned so that the red dot is hidden.
+<p>Also note the (relatively new) control in the (separate) main Settings app, under General => Sounds, called "Ringer and Alerts" volume, and a switch ("Change with Buttons").  By default, the switch is off, which means that the hardware buttons on the side of the iPad case do not control the volume of alert sounds, which is what Emerald Observatory uses to sound alarms.  If Emerald Observatory's sound isn't loud enough for you, make sure that the volume slider on that panel is all the way to the right.  (This new control is available in iOS 4.3.1, but I'm not sure when it appeared).
+<p>Try other "alert" sounds on the device.  An easy test is to see if you can hear keyclicks when typing (but make sure that you have not disabled the keyclick sound; check the main Settings app, General -> Sounds => Keyboard Clicks).
+<p>We've also had some reports from people with their device inside a case which (partially) covers the speaker, which is near the bottom of the case near the Home button.  Try with your iPad outside of the case.
+<p>
+</dd>
+
+<dt> The alarm time gets messed up sometimes.
+</dt>
+<dd> This was a known problem in version 1.3.7.  It is fixed in version 1.3.8.
+<p>
+</dd>
+
+<dt> My time is exactly one hour off (or 2 hours or 3).
+</dt>
+<dd>
+Most likely your iPad is set to the wrong timezone.  Check the Settings app, General tab, Date & Time.  Even if "Set Automatically" is ON it may not be correct.  Turn "Set Automatically" OFF, tap "Time Zone" and choose a city in your zone (the list of possible cities is fairly small but any city in your zone will do).
+<p>
+Note that even if you have the wrong timezone set the time shown in the status bar can look right since it always shows the time relative to whatever timezone is set.  But for its astronomical calculations Emerald Observatory needs to know the Universal Time (UTC) and that's computed from the local time and the timezone offset.
+<P>
+</dd>
+
+<dt> When a Local Notification is fired for an alarm when the app is in the background, the sound keeps going even after I dismiss the dialog.
+</dt>
+<dd> This problem occurred on iOS 4.2 but was fixed with iOS 4.2.1 and iOS 4.3.  Updating your device to the latest OS should fix the problem.
+<p>
+</dd>
+
+<dt>The little red dot on the Earth map is in the wrong place.
+</dt>
+<dd> Check your settings on the info page (accessed via the "i" button in the lower right corner of the screen).  If "Use Location Services" is On then Emerald Observatory is getting its location from iOS.   You may need to enable Location Services in the main Settings app and also make sure that the entry in that section for "Observatory" is On. If "Use Location Services" is Off then we use the value specified in the text entry boxes.  Be sure to use negative numbers for west longitudes and south latitudes.
+<p>
+</dd>
+
+<dt>The sunrise/sunset times are wrong. The planet's azimuths and altitudes are wrong.
+</dt>
+<dd> Check the little red dot on the Earth map at the top of the screen; it should be at your location.  If not,
+you may need to enter your latitude and longitude manually. 
+ Tap the "info" button in the lower right corner.
+Or it could be your timezone; see the previous section.
+<p>
+</dd>
+
+<dt>The moonrise/moonset time is wrong.
+</dt>
+<dd>Make sure you're comparing the rise/set rings to the large 24-hour numbers on the outside of the dial, not the small 12-hour numbers on the inside.
+<p>
+</dd>
+
+<dt>The moonrise/moonset time is wrong. It seems to be for the next day instead of today.
+</dt>
+<dd>
+The way Emerald Observatory shows the rise and set times limits us to showing exactly one rise time and one set time.  But there are actually 3 rise (and 3 set) times that might be of interest: the most recent moonrise, the next moonrise and the moonrise that happened on this date.  Usually, the one for this date is equal to one of the others but sometimes there isn't one, i.e. the Moon doesn't rise some days (e.g. 2010 Dec 27 for Auckland, NZ).  Such cases would make a mess of our display if we were to try to always show the time for this date.  So what we do is show the time of the most recent rise or set event and the one after that.  That is the two events closest in time to the present.
+<p>
+
+Our iPhone app <a href="http://www.emeraldsequoia.com/h/ecsupport#faq2">Emerald Chronometer</a> shows this information in a variety of formats.  Some are just like Observatory.  But some just show the rise and set times on a separate dial.  In those cases, we have a little trick to display the fact that there's no rise or set at all on this date: we put both hands at the 12 oclock position and change the am/pm indictor.
+<p>
+
+All of this applies equally to the Sun and the other planets.  But only in the case of the Moon does the rise/set time change rapidly enough for anyone to notice.
+  <img src="../images/smile.png" alt="smiley" align=center />
+<p>
+</dd>
+
+<dt>The colored Sun ring doesn't always match the sunrise/sunset, twilight or golden hour indicators, particularly on days with Daylight Saving (Summer Time) transitions.
+</dt>
+<dd>
+Emerald Observatory shows the twilight and golden hour indicators that "go with" the associated sunrise or sunset.  For example, if the sunrise for March 13 is shown, then the corresponding twilight indicators will also be for the morning of March 13.  This display switches from displaying the values for March 12 to March 13 exactly at sunset on March 12 (this follows from the rule in the previous answer).
+<p>
+The Sun ring, in contrast, always shows the data for exactly 12 local-time hours before and 12 local-time hours after the current time.  This rule is different because the Sun ring, by its nature, displays a continuously changing value for each time in the day, instead of just one or two events.
+<p>
+So it's possible that the Sun ring can be "out of sync" with the indicators.  This is typically only visible on days with Daylight Saving (Summer) Time transitions, because only then does the sunrise time move enough to notice.  But if you look closely you can see it on other days too, especially at high latitudes.
+</dd>
+
+<dt>Why don't you have an option to reset the iPad's internal clock, too?
+</dt>
+<dd> We would if we could but Apple won't let us.  Generally, letting apps mess around with the system's internals is a bad idea.  In this  particular case, it might be OK (if Apple really trusted us) but they're certainly not going to make a special case just for Emerald Sequoia.
+<p>
+</dd>
+
+<dt>It looks like the planets aren't in the same positions as shown in the newspaper.
+</dt>
+<dd> Emerald Observatory shows the <b>heliocentric</b> positions of the planets; i.e. from a perspective far above the Sun's north pole (though greatly out of scale!).  That's often very different from the geocentric position which is what is more commonly seen in newspapers etc.
+<p>
+Also, make sure you're not looking at the astrology section of the newspaper; their definition of the constellations doesn't match the actual present day sky.
+<p>
+</dd>
+
+<dt>The zodiac symbols don't match the actual positions of the constellations in the sky.
+</dt>
+<dd>Right.  They're there just as labels for the 12-hour clock.  They are only very approximately related to their actual positions.
+<p>
+</dd>
+
+<dt> When I start up Emerald Observatory sometimes the hands jump again after the initial animation.
+</dt>
+<dd> Yup.  Until we get the first reply from an NTP server we don't really know what the right time is.  It will be stable after that.
+<P>
+</dd>
+
+<dt> If I move forward or backward by years or by centuries, keeping the date the same, the Earth shifts in position.
+</dt>
+<dd> That's right.  From 1582 onward Emerald Observatory uses the <a href="http://en.wikipedia.org/wiki/Gregorian_calendar">Gregorian calendar&nbsp;<img src="extlink.png" alt=""/></a>, which keeps more or less in sync with the Earth's position (but because it does so in jumps on leap years there's a bit of a "wobble" from year to year and century to century).  Prior to 1582, the <a href="http://en.wikipedia.org/wiki/Julian_calendar">Julian calendar&nbsp;<img src="extlink.png" alt=""/></a> is used, which (because it has no leap days) does not precisely track the motion of the Earth around the Sun.  Thus as you move backwards from present day to 1582, you'll see the Earth move slightly back and forth, but there will be a jump at 25 October 1582 as we shift to the Julian calendar, and then a gradual and accumulating shift every year further you go into the past (we continue to use a "proleptic" Julian calendar even prior to its historical introduction because of the lack of a consistent standard prior to that time).
+<P>
+</dd>
+
+<dt> I can't seem to get an NTP sync.
+</dt>
+<dd> If the NTP status indicator is flashing and the network activity indicator in the status bar is going then Emerald Observatory is trying to communicate with an NTP server.  This may take up to a minute or two (though it usually takes just a couple of seconds).  If after a couple of minutes the indicator is still not steady green than there's a connectivity problem.  Check that you can access a reliable website (eg. google.com).  If you can get to the Web but still can't get an NTP sync then the problem is likely related to a firewall issue.  NTP requires that UDP port 123 be accessible.  If you're using a residential DSL or cable modem you may have to adjust your firewall settings; if you're at work, you may have to call your IT department.  There shouldn't really be a security issue with NTP and the amount of traffic it generates is very small.
+<P>
+</dd>
+
+<dt> Why is it asking to use my location?
+</dt>
+<dd>Emerald Observatory needs to know your location in order to compute various astronomical quantities (eg. sunrise time).  That's all we use it for.  The data is stored on your device only.   We do not transmit it anywhere.  We do not sell it to anyone.  We update it each time the app starts up and about once an hour thereafter.   It will be copied to your computer when you sync with iTunes so you may want to encrypt your backups. 
+<p>
+</dd>
+
+<dt> It sure would be nice if ...
+</dt>
+<dd> Don't hesitate to send us enchancement requests.
+Some of the ideas we've gotten have been really interesting!
+We're only a two-person company, so we can't promise if or when any particular request will be implemented.
+But the more requests we get from our customers for a particular feature the higher its priority becomes.
+Unless we think it's really cool and do it right away.
+ <img src="../images/smile.png" alt="smiley" align=center />
+<p>
+
+<dt> Translation issues
+</dt>
+<dd>
+We're English-only speakers so we have to rely on others for translation.  If you find something that's poorly translated please let us know and we'll fix it up.  And if you would like to help translate Emerald Observatory into another language we would greatly appreciate it.  (Thanks, Ben!)
+<p>
+
+</dd>
+
+
+</dl>
+<br>
+<br>
+
+<h3><a name='Bugs'>Bugs</a></h3>
+We work hard to make Emerald Observatory as close to perfect as we can.
+But we're realists.  And we're here to help.  So if you have a problem just send mail to
+<blockquote>
+<a href="mailto:essupport@emeraldsequoia.com?subject=Emerald%20Observatory">essupport@emeraldsequoia.com</a>
+</blockquote>
+Please read the <a href="index.html">documentation</a> and check the FAQs above first.  Make sure you have the latest version (see the <a href="ReleaseNotes.html">Release Notes</a>);
+it's displayed on the Help screen.
+<p>
+A screen dump is often very helpful.  You can make one by holding down the Home button while clicking the Lock button; that puts an image of the screen in your Photos library and you can mail it from there.
+<p>
+We try to respond quickly but we're only a two-person company so occasional delays are inevitable.
+<br>
+<br>
+
+<h3>Feedback</h3>
+We would also very much appreciate any comments you may have about how we can improve the Emerald products in the future.
+We would love to hear your ideas.  Use the email address above.
+<br>
+<br>
+
+<h3><a href="ReleaseNotes.html">Release Notes</a></h3>
+Click <a href="ReleaseNotes.html">here</a> to see the release notes.
+<br>
+<br>
+
+<hr size=4>
+Copyright&nbsp;&copy;&nbsp;2011, <a href="../index.html"><span class='emerald'>Emerald Sequoia LLC</span></a>; last&nbsp;updated:&nbsp;2023&nbsp;August&nbsp;5.
+<br>
+<br>
+<font size=-2>Apple, iTunes, App Store, iPhone and iPod  are trademarks of Apple Inc.</font>
+</body>
+</html>

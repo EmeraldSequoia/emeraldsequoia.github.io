@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+
+ <title>Emerald Babylon</title>
+ <meta name="viewport" content="width=device-width" />
+ <link rel="apple-touch-icon" href="../../images/eblogo57-1.png">
+ <link rel="shortcut icon" href="../../images/GlyphBerry.png" type="image/png">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="../product.css"/>
+ <style>
+img.babylon-i-help-footer {
+  border: 2px solid #a0ffa0;
+  border-radius: 7px;
+  padding: 2px;
+}
+ </style>
+</head>
+
+<body>
+<div class='floatL'>
+  <a href="../../index.php">Emerald Sequoia LLC</a><br>
+  <a href="../index.html">Emerald Chronometer for Wear OS</a>
+</div>
+<div class='floatR'>
+ <a href="../buy.html">How to Buy</a>
+</div>
+<br>
+<br>
+<div class="shutdown-message-container">
+  <div class="shutdown-message">
+    <p>Emerald Sequoia LLC will be shutting down at the end of 2023. Please see our blog post
+    <a href="https://emeraldsequoia.com/esblog/2022/12/21/emerald-sequoias-future/">here</a>.
+    <p>
+    Thanks for all of your support over the past 15 years!</div>
+</div>
+<hr size=1>
+
+<h1>Emerald Babylon<br>
+  <span class='wearosSubhead'>for<br>Wear OS by Google</span></h1>
+<center>
+<div width='1000' max-width='1000' margin='auto'>
+<img border='0' width='100%' src="babylon_i-banner.png">
+</div>
+<table>
+  <tr>
+    <td align="right"><b>Buy this face</b></td>
+    <td>
+<a href="https://play.google.com/store/apps/details?id=com.emeraldsequoia.chronometer.babylon&utm_source=FacePage&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="text-decoration: none">
+<img width="200" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+</a>
+    </td>
+  </tr>
+  <tr>
+    <td align-"right"><b>Buy all 21 faces</b></td>
+    <td>
+<a href="https://play.google.com/store/apps/details?id=com.emeraldsequoia.chronometer.chronometer_pro&utm_source=FacePage&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="text-decoration: none">
+<img width="200" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+</a>
+    </td>
+  </tr>
+</table>
+</center>
+<p>
+
+<!-- Boilerplate code above here -->
+<p>
+</div>
+
+<b>Babylon</b> takes its name from the ancient city
+of <a href="http://en.m.wikipedia.org/wiki/Babylon">Babylon<img src="../extlink.png"></a>,
+where early calendars were invented.
+<p>
+Babylon displays a whole-month calendar in the usual format, including
+the last days of the previous month
+and the first days of the following month.  See <a href="#mechanical">below</a> for a description of the mechanics being simulated.
+<p>
+A setting is available to choose which day (Sunday, Monday, or Saturday) is considered the first day of the week. To change this, long press on the center of the face, or click on the gear below the face in the face chooser panel.
+<p>
+Two sets of red indicator wires (two horizontal and two vertical) move linearly to indicate the current day of the month (more precisely, the two horizontal indicators show the week, the two vertical ones show the weekday, and their intersection shows the current day).
+<p>
+A moon phase indicator like that of <a href="../Chandra/Chandra.html">Chandra</a> is present at the lower left, along with a month display at the top and a year display at the lower right.
+<p>
+<a name="mechanical"><b>Mechanical model</b></a>
+<p>
+The calendar display is implemented with stacked wheels which rotate to show the 
+configuration for the current month in the window at the top of the dial.
+There are two primary wheels:
+<p>
+<center>
+<img src="SundayWheel012@2x.png" width='240'/>
+<img src="SundayWheel3456@2x.png" width='239'/>
+</center>
+<p>
+Spread over these two wheels are the seven possible 31-day month
+configurations, corresponding to the seven weekdays that the first
+falls on.  The bottom wheel shows four of these seven, and the top one
+shows the remaining three and has a "cutout" in the fourth position.
+When one of the top wheel's configurations is needed for the current month, that
+configuration rotates around to be at the top and thus visible in the
+window; when one of the bottom wheel's configurations is needed, the
+top wheel rotates so its cutout section is at the top, letting the
+bottom wheel show through.
+<p>
+Since all of the configurations on the primary wheels display 31-day months, covers slide in from the right to cover days which don't exist in the current month (for example, as shown below, the missing days 30 and 31 in a leap-year February).  These covers are inscribed with the days of the following month, and their numbers align with the correct days of the week:
+<p>
+<center>
+<img src="NextMonthCovers@2x.png" width='110'/>
+</center>
+<p>
+Similarly, the last few days of the previous month are shown with sliders that slide underneath the current month, sliding to show the days in their proper weekday positions:
+<p>
+<center>
+<img src="PrevMonthUnderlays@2x.png" width='106'/>
+</center>
+<p>In <a href="../ambient_mode.html">ambient mode</a>, the same information is displayed with different colors to save energy.
+<!-- Boilerplate code below here -->
+<div display='inline' class='website'>
+<hr size=1>
+<h3><a href="../index.html">Emerald&nbsp;Chronometer</a> Faces for Wear&nbsp;OS&nbsp;by&nbsp;Google</h3>
+<a href="../mauna_kea/mauna_kea_i.html"><img class="mauna-kea-i-help-footer" alt="Mauna Kea" src="../mauna_kea/mauna_kea_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="../mauna_kea/mauna_loa_i.html"><img class="mauna-loa-i-help-footer" alt="Mauna Loa" src="../mauna_kea/mauna_loa_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="../terra/terra_i.html"><img class="terra-i-help-footer" alt="Terra" src="../terra/terra_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../terra/gaia_i.html"><img class="gaia-i-help-footer" alt="Gaia" src="../terra/gaia_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../miami/venezia_i.html"><img class="venezia-i-help-footer" alt="Venezia" src="../miami/venezia_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../haleakala/haleakala_i.html"><img class="haleakala-i-help-footer" alt="Haleakala" src="../haleakala/haleakala_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="../haleakala/hana_i.html"><img class="hana-i-help-footer" alt="Hana" src="../haleakala/hana_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="../geneva/geneva_i.html"><img class="geneva-i-help-footer" alt="Geneva" src="../geneva/geneva_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../chandra/selene_i.html"><img class="selene-i-help-footer" alt="Selene" src="../chandra/selene_i-icon.png"    width=50 align=center vspace=4></a>
+<a href="../chandra/chandra_i.html"><img class="chandra-i-help-footer" alt="Chandra" src="../chandra/chandra_i-icon.png"    width=50 align=center vspace=4></a>
+<a href="../paris/paris_i.html"><img class="paris-i-help-footer" alt="Paris" src="../paris/paris_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../mcalester/mcalester_i.html"><img class="mcalester-i-help-footer" alt="Mcalester" src="../mcalester/mcalester_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="../firenze/firenze_i.html"><img class="firenze-i-help-footer" alt="Firenze" src="../firenze/firenze_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../firenze/padua_i.html"><img class="padua-i-help-footer" alt="Padua" src="../firenze/padua_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../babylon/babylon_i.html"><img class="babylon-i-help-footer" alt="Babylon" src="../babylon/babylon_i-icon.png"    width=50 align=center vspace=4></a>
+<a href="../geneva/basel_i.html"><img class="basel-i-help-footer" alt="Basel" src="../geneva/basel_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../alexandria/alexandria_i.html"><img class="alexandria-i-help-footer" alt="Alexandria" src="../alexandria/alexandria_i-icon.png" width=50  align=center vspace=4></a>
+<a href="../atlantis/atlantis_i.html"><img class="atlantis-i-help-footer" alt="Atlantis" src="../atlantis/atlantis_i-icon.png"   width=50 align=center vspace=4></a>
+<a href="../milano/milano_i.html"><img class="milano-i-help-footer" alt="Milano" src="../milano/milano_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../miami/miami_i.html"><img class="miami-i-help-footer" alt="Miami" src="../miami/miami_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="../vienna/vienna_i.html"><img class="vienna-i-help-footer" alt="Vienna" src="../vienna/vienna_i-icon.png"  width=50 align=center vspace=4></a>
+<hr size=4>
+Copyright&nbsp;&copy;&nbsp;2018, <a href="../../index.html"><span class='emerald'>Emerald Sequoia LLC</span></a>
+</div>
+<hr>
+</body></html>

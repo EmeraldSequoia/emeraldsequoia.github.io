@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Emerald Time</title>
+ <meta name="viewport" content="width=device-width" />  <!-- for iphone -->
+ <link rel="apple-touch-icon" href="../images/eblogo57.png">
+ <link rel="shortcut icon" href="../images/GlyphBerry" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../styles/main.css" type="text/css" />
+  <META name="keywords" content="NTP, atomuhr cs2">
+  <META name="keywords" content="time, ntp, horology, network, protocol, correct, correction, iPhone ">
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class='floatL'><a href="../index.php">Home</a></div>
+<div class='floatR'><a href="http://itunes.apple.com/us/app/emerald-time/id290384375?mt=8">Buy Now</a></div>
+<br>
+<div class="shutdown-message-container">
+  <div class="shutdown-message">
+    <p>Emerald Sequoia LLC will be shutting down at the end of 2023. Please see our blog post
+    <a href="https://emeraldsequoia.com/esblog/2022/12/21/emerald-sequoias-future/">here</a>.
+    <p>
+    Thanks for all of your support over the past 15 years!</div>
+</div>
+<hr size=1>
+
+<h1>Emerald Time</h1>
+<div style='text-align:center; width: 100%'>
+ <span class="smallest">Version 1.9</span><br><br>
+ <img src="ET2.png">
+</div>
+<br><p>
+
+Emerald Time is a little iPhone/iPad™ application that uses
+<a href="http://www.ntp.org/">Network Time Protocol (NTP)</a>
+ servers on the Internet to obtain a more accurate time
+than is typically available from the iPhone's internal clock, which can be off by several seconds or more.
+<div style="float:right; width:33%; color:white">
+<ul>
+<li><a href='http://www.appreview.com/applications/10543'><img style='vertical-align: middle' src="AppReviewBetter.badge.png" border='0' vspace='12'></a>
+</ul>
+</div>
+<p>
+<h3>Features</h3>
+<div class="smaller">
+<ul>
+  <li> geeky stats
+  <li> blinky lights and numbers
+  <li> optional audible ticks
+  <li> display options for
+    <ul>
+    <li> 12- or 24-hour format
+    <li> UTC or local time zones
+    <li> seconds & tenths
+    <li> night mode (red screen)
+    </ul>
+  <li> NTP accuracy
+  <li> live leap second display
+  <li> screen brightness control
+  <li> totally free
+</ul>
+</div>
+
+<h3>Displays</h3>
+
+   The colored number at the upper right is the offset (difference in seconds) between the true time and the device's internal clock; positive means the internal clock is behind. The color's saturation is based on how far the offset is from zero; white means the offset is very small.  If an NTP connection cannot be made a gray "?" will appear instead.
+<p>
+
+   The four items inside the cloud represent some of the NTP servers that have been contacted.  While Emerald Time is actually in communication with a server it shows that server's time.  After it disconnects only the difference between that server's clock and the iPhone's internal clock is shown.  The best value (not necessarily the smallest one) is shown in green.
+Question marks are shown when there has not yet been a successful connection.
+<p>
+
+   The red/yellow/green lights above the time show the progress of the server connections.  When Emerald Time has enough good data the green light is on.  The other lights appear only while data is being collected.
+<p>
+
+<h3>Controls</h3>
+
+<img src="servers-1.png" align=right hspace=4>
+   There are eight hot spots that you can tap. Tapping on AM/PM, time zone or hours:minutes will cycle between 12- and 24-hour time and between your local time zone and <a href="http://en.wikipedia.org/wiki/Utc">UTC</a> ("GMT").
+Tapping the seconds will cycle between seconds with tenths, just seconds, and nothing.
+<p>
+
+   For the truly obsessed (and for the convenience of the developers) tapping anywhere on the cloud brings up a table of server statistics as shown to the right:  "n" is the number of good/bad packets received; "offset" is the difference between that server's clock and the internal clock; "σ" is the standard deviation; "rtt" is the average round-trip time to that server (in milliseconds). The colors indicate the state of the server connection.  Tap again to return to the cloud.
+<p>
+
+   Tapping the offset or any of the lights makes Emerald Time immediately contact the NTP servers again to recompute a new offset.  That burns up some network packets and makes a nice light show, especially with the server info table showing.
+<p>
+
+  Tap the red moon icon in the lower left to switch to a simplified night mode where the digits are displayed in red.
+<p>
+
+  In the Settings app you can enable the ability to swipe vertically to change the brightness of the screen backlight.
+<p>
+
+   The "i" brings up the built-in version of this documentation.
+<br clear=all>
+
+<h3>Notes</h3>
+   Unfortunately, 3rd party iOS applications cannot change the internal clock.  So Emerald Time can display the right time but it can't make it available to other apps.
+<p>
+
+   Emerald Time has an option to disable the global Auto-lock so that the device does not sleep while Emerald Time is running.
+You set this option in the applications section (at the bottom) of the Settings app.
+ This will drain your battery in just a few hours; best to keep it on the charger.
+<p>
+
+Emerald Time's Settings app section also has a provision for adding an additional NTP server. You may enter either a hostname an IP address.  Restart the app or tap the lights to do a new sync after changing the option.
+<p>
+
+There is also an option in Emerald Time's Settings app section to enable audible ticks once per second.
+<p>
+
+   Emerald Time periodically goes out to the Internet to get data from the NTP servers so beware of data <a href="http://en.wikipedia.org/wiki/Roaming">roaming charges</a>.  If the network is unavailable, it will try repeatedly with longer and longer intervals between attempts.  You can always force another attempt by pressing the lights.
+<p>
+
+   Emerald Time chooses which NTP servers to contact based on your locale (see Settings->General->International->Region Format).  It will usually work more efficiently if you have that set correctly.
+<p>
+
+   Don't be surprised if the offset changes occasionally.  Devices with 3G capability frequently update their internal clocks from the cell phone network.  Emerald Time sees that, contacts the NTP servers again and calculates the new offset.  The displayed time should not change but the new offset may be quite different from the previous one.  If your friends' devices are also running Emerald Time their offsets may be different but the displayed times should all be the same!
+<p>
+
+   Emerald Time primarily uses servers from the <a href="http://www.pool.ntp.org/">NTP Pool Project</a> but it also includes Apple's default NTP server(s).
+
+<br>
+ <h3 align=center><a href="etsupport.html">Emerald Time Support and FAQ</a></h3>
+See this page for contact information and the FAQ.
+<div style="float:right"><a href="http://itunes.apple.com/us/app/emerald-time/id290384375?mt=8"><img src="../images/App_Store_badge_0710.png" alt="app store logo" hspace=16 valign=top border=0 /></a></div>
+<br><br>
+<br>
+<div class="fb-like" data-href="http://www.facebook.com/pages/Emerald-Sequoia-LLC/319704374731458?sk=wall" data-send="true" data-width="450" data-show-faces="false" data-colorscheme="dark"></div>
+
+<hr size=4>
+Copyright&nbsp;&copy;&nbsp;2013, <a href="../index.html"><span class='emerald'>Emerald Sequoia LLC</span></a>; last&nbsp;updated:&nbsp;2023&nbsp;August&nbsp;5.
+<br>
+<br>
+<font size=-2>
+NTP code derived from public domain sources covered by <a href="../h/ntpcopyright.html">these copyrights</a>.
+<br>
+iPhone and iPad are trademarks of Apple Inc.
+</font>
+</body>
+</html>

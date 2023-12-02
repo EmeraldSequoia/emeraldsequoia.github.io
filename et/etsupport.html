@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Emerald Time Support</title>
+ <meta name="viewport" content="width=device-width" />  <!-- for iphone -->
+ <link rel="apple-touch-icon" href="../images/eblogo57.png">
+ <link rel="shortcut icon" href="../images/GlyphBerry" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../styles/main.css" type="text/css" />
+</head>
+<body>
+<div class='floatL'>
+ <a href="../index.php">Home</a>&nbsp;&nbsp;
+ <a href="index.html">Time</a>
+</div>
+<div class='floatR'>
+<div class='floatR'><a href="http://itunes.apple.com/us/app/emerald-time/id290384375?mt=8">Buy Now</a></div>
+</div>
+<br>
+<div class="shutdown-message-container">
+  <div class="shutdown-message">
+    <p>Emerald Sequoia LLC will be shutting down at the end of 2023. Please see our blog post
+    <a href="https://emeraldsequoia.com/esblog/2022/12/21/emerald-sequoias-future/">here</a>.
+    <p>
+    Thanks for all of your support over the past 15 years!</div>
+</div>
+<hr size=1>
+
+<h1>Emerald Time Support</h1>
+<div style='text-align:center; width: 100%'>
+ <span class="smallest">Version 1.9</span><br><br>
+ <img src="nonet.png">
+</div
+<p>
+
+<h3>FAQ</h3>
+<dl>
+<a name="faq1"></a>
+<dt> My iPhone™ is only off by 4 seconds; why do I need this silly app?
+</dt>
+<dd>
+You don't.  But some of us think such an error is insanely huge for a 21st century computer.  It's just not right.
+<p>
+
+<dt> It doesn't properly work on the iPad</dt>
+<dd>Please upgrade to version 1.3 or later.<p></dd>
+
+<dt> The seconds have disappeared!</dt>
+<dd>Tap the seconds window.  That cycles between displaying the seconds with tenths, the seconds only and nothing at all.  That's convenient if you find the blinking seconds annoying.  But it's confusing if you don't know that.  Now you do.<p></dd>
+
+<dt> What does a "?" in the upper right mean?</dt>
+<dd>That Emerald Time can't contact any servers.  Make sure you really have internet connectivity.  Be patient.  Or tap the lights to force another retry.  Sometimes it takes several tries.  <p></dd>
+
+<dt> All the servers in the list are red or gray like the picture above.</dt>
+<dd>See previous answer.<p></dd>
+
+<dt> What do the colors mean in the table of stats?</dt>
+<dd>
+<ul>
+<li style="color:gray">Gray: no attempt has yet been made to contact this server
+<li style="color:red">Red: unable to contact the server
+<li style="color:orange">Orange: making the first attempts to contact the server
+<li style="color:yellow">Yellow: getting data from the server but not yet enough
+<li style="color:cyan">Cyan: same as green but the green one had more consistent statistics
+<li style="color:green">Green: Emerald Time has suficient good data to accurately determine the server's time
+</UL>
+<p></dd>
+
+<dt> What are those funny server names? </dt>
+<dd>Emerald Time uses servers from the <a href="http://www.pool.ntp.org/">NTP Pool Project</a>.  The addresses you see are not real; they just redirect (more or less at random) to the real servers.  You will not get the same real server each time.  This is good.<p></dd>
+
+<dt> But what if I somehow get connected to a really remote server on another continent? </dt>
+<dd>It will probably work just fine.  An NTP server half way around the world seems to be able to supply a more accurate time than the cell phone tower a mile away.  But Emerald Time picks the best of the servers it tries anyway, so it's not likely that a really distant one will be picked.<p></dd>
+
+<dt> My iPhone has GPS built in.  Doesn't that have a really accurate clock? </dt>
+<dd>It sure does, and it's accurate to a few nanoseconds (if it wasn't it wouldn't work).  In fact, GPS receivers are very often used as the reference standard for NTP servers.  But some versions of iOS do not use the GPS time information.  And of course, some devices don't have GPS.<p></dd>
+
+<dt> I ran Emerald Time and it got a good time setting.  But when I quit the device's clock went back to what it was before. </dt>
+<dd>Yeah, that's how it works.  Setting the system clock requires root privileges which are granted only to Apple's own apps.  This is probably a good thing in general; you really don't want random programs messing with your system.<p></dd>
+
+<dt> What's that misshaped "o" at the head of the middle column? </dt>
+<dd>That's the Greek letter sigma (σ) which is conventionally used to represent a <a href="http://en.wikipedia.org/wiki/Standard_deviation">standard deviation</a>.<p></dd>
+
+<dt> I'm confused about how to set "Disable Auto-Lock"... </dt>
+<dd>Yes, it's a little confusing.  iOS's system-wide option is called "Auto-Lock"; when it's enabled (set to something other than "Never") the screen blanks after a while.  This is often not the behavior you want in an app like Emerald Time so we have an option to disable the system-wide feature for our app only.  Thus when our option "Disable Auto-Lock" is ON the screen should not blank out while Emerald Time is running (as if "Auto-Lock" was set to "Never"). Be careful with this when your device is not plugged in.
+<p>
+
+<dt> How to I turn on/off the ticking sounds? </dt>
+<dd> Just go the the global Settings app on your home screen, scroll down to the item labeled "Time" (near the bottom) and slide the switch.  The change will take effect as soon as you return to Emerald Time.</dd>
+
+<p>
+
+<dt> I can't get the brightness control to work. </dt>
+<dd> You must first enable it in the Settings app.  See above.
+</dd>
+<p>
+
+<dt> The screen has gone completely black! </dt>
+<dd> 
+You've probably turned the brightness down all the way.  Just swipe up.
+</dd>
+<p>
+
+<dt> When I try to set the brightness I get the Notification Center instead (or vice versa). </dt>
+<dd> 
+The Notification Center only appears if the swipe is initiated at the very top of the screen. So avoid that area when setting the brightness; starting in the middle of the screen works just fine.
+</dd>
+
+<dt> </dt>
+<dd><p></dd>
+
+</dl>
+<br>
+<h3>Bugs</h3>
+We work hard to make  Emerald Time as close to perfect as we can.
+But we're realists.  And we're here to help.  So if you have a problem just send mail to
+<blockquote>
+<a href="mailto:essupport@emeraldsequoia.com?subject=Emerald%20Time">essupport@emeraldsequoia.com</a>
+</blockquote>
+including the name of the product you are writing about (Emerald Time).
+Please read the documentation and check the FAQs first.  Make sure you have the latest version (see the <a href="ReleaseNotes.html">Release Notes</a>);
+it's displayed at the bottom of the Help screen.
+We try to respond quickly but we're only a two-person company so occasional delays are inevitable.
+<br>
+<br>
+
+<h3>Feedback</h3>
+We would also very much appreciate any comments you may have about how we can improve Emerald Time in the future.
+We would love to hear your ideas.  Use the address above.
+<br>
+<br>
+
+
+<h3><a href="ReleaseNotes.html">Release Notes</a></h3>
+Click <a href="ReleaseNotes.html">here</a> to see what changed in each release.
+<br>
+<br>
+
+<hr size=4>
+Copyright&nbsp;&copy;&nbsp;2013, <a href="../index.html"><span class='emerald'>Emerald Sequoia LLC</span></a>; last&nbsp;updated:&nbsp;2023&nbsp;August&nbsp;5.
+<br>
+<br>
+<font size=-2>iPhone and iPod  are trademarks of Apple Inc.</font>
+</body>
+</html>

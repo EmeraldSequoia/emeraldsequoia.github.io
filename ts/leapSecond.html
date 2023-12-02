@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Support for Leap Seconds in Emerald Timestamp</title>
+ <meta name="viewport" content="width=device-width" />  <!-- for iphone -->
+ <link rel="apple-touch-icon" href="../images/eblogo57-1.png">
+ <link rel="shortcut icon" href="../images/GlyphBerry.png" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../h/product.css" type="text/css" />
+</head>
+<body>
+<div class='floatL'>
+ <a href="../index.php">Home</a>&nbsp;&nbsp;
+ <a href="index.html">Timestamp</a>
+</div>
+<div class='floatR'>
+ <a href="http://itunes.apple.com/us/app/emerald-timestamp/id371935298?mt=8">Buy Now</a>
+</div>
+<br>
+<hr size=1>
+
+<h1>Support for Leap Seconds in Emerald Timestamp</h1>
+<p>
+Beginning with version 2.0, Emerald Timestamp has tentative support for live leap-second display.  That is, during the insertion of the leap second at the end of June 2012 (UTC), the UTC time read, for example,<br>
+23:59:59.9 UTC<br>
+23:59:60.0 UTC<br>
+23:59:60.1 UTC<br>
+23:59:60.2 UTC<br>
+...<p>
+You can see a movie of Emerald Time and Emerald Timestamp taken during the leap second in June 2012 <a href="../movies/Leap-Second/Leap_Second_ET_ETS.html">here</a>.
+<p>
+A few notes about this support:
+<ul>
+<li>Intervals that span a leap-second event are properly calculated.
+<li>NTP servers in the past have not been consistent in returning the correct time after a leap-second event, so the time may revert (or partially revert) when the first sync comes in following the event.  It will eventually catch back up to the official time as the NTP servers correct themselves properly, so this will only affect times captured during the period immediately after the leap-second event.
+<li>JD(UTC) will "hold" at the leap-second boundary, because it has no way of representing the intervening time.  This is why JD(TT) is recommended to be used in its place, though of course it is referenced to a different standard.
+<li>Similarly, Excel has no way of representing the extra time, so when exporting to an Excel spreadsheet the times like :60.x are represented as being at :00.0 for the next minute.  Excel-format intervals are correctly exported.
+</ul>

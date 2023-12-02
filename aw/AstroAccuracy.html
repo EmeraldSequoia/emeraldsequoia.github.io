@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+ <title>Emerald Chronometer Complications</title>
+ <meta name="viewport" content="width=device-width" />
+ <link rel="apple-touch-icon" href="../images/eblogo57-1.png">
+ <link rel="shortcut icon" href="../images/GlyphBerry.png" type="image/png">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="product.css"/>
+</head>
+<body>
+<div display='inline' class='website'>
+<div class='floatL'>
+  <a href="../index.php">Emerald Sequoia LLC</a><br>
+  <a href="index.html">Emerald Chronometer for Wear OS</a>
+</div>
+<div class='floatR'>
+ <a href="buy.html">How to Buy</a>
+</div>
+<br>
+<br>
+<hr size=1>
+
+<center>
+  <h1>Accuracy of the<br>Astronomical Algorithms<br>
+  <span class='wearosSubhead'>in<br>Wear&nbsp;OS products</span></h1>
+</center>
+
+<h3>General rule</h3>
+As a general rule, you can assume that all of the astronomical
+displays within Emerald Chronometer are at least as accurate as the
+precision with which you can read the display, even with a loupe or
+other magnifying glass, assuming the watch device is supplying the
+correct time and location.
+For example, the
+azimuth displays on <a href="haleakala/haleakala_i.html">Emerald Haleakal&#257<a> can be read approximately to the nearest
+degree, and there is far more accuracy in the data than that.
+Similarly, the rise and set dials, which can be read to the nearest
+minute, are at least that accurate.  But note of course that they are only valid
+if the rise or set point on the horizon is at exactly the same level
+as you are; if the Sun is setting behind a hill above you, for example, it will
+set much earlier than the time indicated.
+<p>
+For example, although it would be easy to implement, we do not show sidereal seconds on our sidereal-time dials, because
+the location given by the device is often not accurate enough to display sidereal seconds accurately.
+<p>
+The displays depend heavily on having the correct time and location.
+You can use the <a href="status/status_i.html">device info panel</a> (accessible from each face's configuration panel)
+to determine what your device thinks the location and time zone are;
+Emerald Chronometer asks for the precise location every 30
+minutes and updates immediately when the time zone set on the device changes.
+
+<h3>Specifics</h3> The algorithms employed in Emerald Chronometer are
+very high-precision series calculations originally developed by
+astronomers at the Bureau des Longitudes in Paris in the 1980s and
+1990s.  They are particularly well-suited for wearable devices because
+the data tables they are based on can fit in about 500 kilobytes of
+memory (this includes data for most planets for the same period), and
+yet still produce accuracy of less than a degree for
+the next 100 years.  No Internet connection is required for any
+astronomical calculation.
+<p>
+Specifically, the tables employed are from <a href='http://www.amazon.com/exec/obidos/ASIN/0943396336/billarnett'>Lunar Tables and Programs
+from 4000 B.C. to A.D. 8000<img src="extlink.png"></a>, by Michelle Chapront-Touz&eacute; & Jean
+Chapront, copyright 1991, and
+<a href='http://www.amazon.com/exec/obidos/ASIN/0943396085/billarnett'>Planetary Programs and Tables from -4000 to +2800<img src="extlink.png"></a>, by Pierre
+Bretagnon & Jean-Louis Simon, copyright 1986, both published by
+Willmann-Bell, Inc. (the latter includes the Sun motion tables).
+<p>
+The algorithms presented in those books were ported to C for use in the
+iPhone and Android/Wear OS development environments, and local caches were developed to
+avoid recalculation of common quantities.  The time conversions in
+those books have been superceded by more accurate ones, described below.
+<p>
+The Right Ascension (RA) display on <a href="geneva/geneva_i.html">Emerald Geneva<a> displays the RA "of date", meaning the RA
+applied from the equniox current on the given date.  This means that
+the Local Sidereal Time (per its definition) also displays the
+rotation from the equinox, and not from the equinox of J2000.  It also
+means that the Sun, Moon, and lunar nodal points' RA "of date" may be
+read from that dial.  The constellations are displayed in the exact
+orientation found in J2000, but rotated according to the precession to
+match their locations at the displayed time.  The P03 formulae for
+general precession are used.
+<p>
+In contrast, on Mauna Kea, the RA display is fixed in the zodiac
+dial to be the J2000 RA numbers of the constellations, and so on that
+dial may be read the J2000 RA of the Sun and Moon.
+<p>
+The Moon displays on faces such as <a href="chandra/chandra_i.html">Chandra</a> correctly show the orientation and phase, but
+make no attempt to show <a href="https://en.wikipedia.org/wiki/Libration">libration<img src="extlink.png"></a>.
+<p>
+Emerald Chronometer always displays UTC, and uses that as the starting
+point for its calculations, converting to Terrestrial Dynamic Time (TDT)
+ using the polynomial expressions suggested by Fred Espenak
+at <a href='http://eclipse.gsfc.nasa.gov/SEhelp/deltatpoly2004.html'>this
+NASA site<img src="extlink.png"></a> based on the data in Morrison & Stephenson, 2004.
+
+<!-- Boilerplate code below here -->
+<div display='inline' class='website'>
+<hr size=1>
+<h3><a href="index.html">Emerald&nbsp;Chronometer</a> Faces for Wear&nbsp;OS&nbsp;by&nbsp;Google</h3>
+<a href="mauna_kea/mauna_kea_i.html"><img class="mauna-kea-i-help-footer" alt="Mauna Kea" src="mauna_kea/mauna_kea_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="mauna_kea/mauna_loa_i.html"><img class="mauna-loa-i-help-footer" alt="Mauna Loa" src="mauna_kea/mauna_loa_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="terra/terra_i.html"><img class="terra-i-help-footer" alt="Terra" src="terra/terra_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="terra/gaia_i.html"><img class="gaia-i-help-footer" alt="Gaia" src="terra/gaia_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="miami/venezia_i.html"><img class="venezia-i-help-footer" alt="Venezia" src="miami/venezia_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="haleakala/haleakala_i.html"><img class="haleakala-i-help-footer" alt="Haleakala" src="haleakala/haleakala_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="haleakala/hana_i.html"><img class="hana-i-help-footer" alt="Hana" src="haleakala/hana_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="geneva/geneva_i.html"><img class="geneva-i-help-footer" alt="Geneva" src="geneva/geneva_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="chandra/selene_i.html"><img class="selene-i-help-footer" alt="Selene" src="chandra/selene_i-icon.png"    width=50 align=center vspace=4></a>
+<a href="chandra/chandra_i.html"><img class="chandra-i-help-footer" alt="Chandra" src="chandra/chandra_i-icon.png"    width=50 align=center vspace=4></a>
+<a href="paris/paris_i.html"><img class="paris-i-help-footer" alt="Paris" src="paris/paris_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="mcalester/mcalester_i.html"><img class="mcalester-i-help-footer" alt="Mcalester" src="mcalester/mcalester_i-icon.png"  width=50 align=center vspace=4></a>
+<a href="firenze/firenze_i.html"><img class="firenze-i-help-footer" alt="Firenze" src="firenze/firenze_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="firenze/padua_i.html"><img class="padua-i-help-footer" alt="Padua" src="firenze/padua_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="babylon/babylon_i.html"><img class="babylon-i-help-footer" alt="Babylon" src="babylon/babylon_i-icon.png"    width=50 align=center vspace=4></a>
+<a href="geneva/basel_i.html"><img class="basel-i-help-footer" alt="Basel" src="geneva/basel_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="alexandria/alexandria_i.html"><img class="alexandria-i-help-footer" alt="Alexandria" src="alexandria/alexandria_i-icon.png" width=50  align=center vspace=4></a>
+<a href="atlantis/atlantis_i.html"><img class="atlantis-i-help-footer" alt="Atlantis" src="atlantis/atlantis_i-icon.png"   width=50 align=center vspace=4></a>
+<a href="milano/milano_i.html"><img class="milano-i-help-footer" alt="Milano" src="milano/milano_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="miami/miami_i.html"><img class="miami-i-help-footer" alt="Miami" src="miami/miami_i-icon.png"      width=50 align=center vspace=4></a>
+<a href="vienna/vienna_i.html"><img class="vienna-i-help-footer" alt="Vienna" src="vienna/vienna_i-icon.png"  width=50 align=center vspace=4></a>
+<hr size=4>
+Copyright&nbsp;&copy;&nbsp;2018, <a href="index.html"><span class='emerald'>Emerald Sequoia LLC</span></a>
+</div>
+<hr>
+</body></html>

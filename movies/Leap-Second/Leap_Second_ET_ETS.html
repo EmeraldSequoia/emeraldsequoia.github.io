@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Emerald Sequoia Apps -- Leap Second Movie</title>
+ <meta name="viewport" content="width=device-width" />
+ <link rel="apple-touch-icon" href="../../images/eblogo57-1.png">
+ <link rel="shortcut icon" href="../../images/GlyphBerry.png" type="image/png">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="../../styles/main.css" type="text/css" />
+ <META name="keywords" content="astronomy, twilight, sunset, photography, sun, moon, planets, earth, time, clock, horology, iPad ">
+ <script src="http://www.apple.com/library/quicktime/scripts/ac_quicktime.js" language="JavaScript" type="text/javascript"></script>
+ <script src="http://www.apple.com/library/quicktime/scripts/qtp_library.js" language="JavaScript" type="text/javascript"></script>
+ <link href="http://www.apple.com/library/quicktime/stylesheets/qtp_library.css" rel="StyleSheet" type="text/css" />
+ <link rel="stylesheet" href="eo.css" type="text/css" />
+
+	<script src="scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
+	<script src="scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
+	<script language="JavaScript" type="text/javascript">
+		var setJSControllerEnabled = function(enabled) {
+			var poster = document.getElementsByClassName("QTP")[0].poster;
+			if(enabled)
+				poster.controller.element.style.display = "";
+			else
+				poster.controller.element.style.display = "none";
+			poster.attributes.controller = enabled ? "false" : "true";
+			document.getElementById(enabled ? "jscontrollerenabled" : "jscontrollerdisabled").style.display = "";
+			document.getElementById(enabled ? "jscontrollerdisabled" : "jscontrollerenabled").style.display = "none";
+			if(poster.movie)
+				poster.movie.element.SetControllerVisible(!enabled);
+		}		
+	</script>
+	<script language="JavaScript" type="text/javascript">QTP.Poster.prototype.clickText = "Click To Play";</script>
+	<link href="stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class='floatL'><a href="../../index.php">Home</a></div>
+<div class='floatR'><a href="http://itunes.apple.com/us/app/emerald-timestamp/id371935298?mt=8">Buy Now</a></div>
+<br>
+<hr size=1>
+
+<h1>Emerald&nbsp;Time and Emerald&nbsp;Timestamp<br>at the leap second in June 2012</h1>
+<p>
+<center>
+<a href="Leap_Second_ET_ETS.mov" rel="qtposter">
+	<img src="Leap_Second_ET_ETS.jpg" width="853" height="496" alt="Leap_Second_ET_ETS" />
+</a>
+</center>
+
+
+</body>
+</html>

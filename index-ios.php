@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<?php include 'includes/browser.php'; setBrowser(); ?>
+<head>
+<title>Emerald Sequoia LLC</title>
+ <meta name="viewport" content="width=device-width" />  <!-- for iphone/ipad -->
+ <link rel="apple-touch-icon" href="images/eblogo57.png">
+ <link rel="shortcut icon" href="images/GlyphBerry" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="styles/main.css" type="text/css" />
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<?php if ($browser == 'msie6') { ?>
+
+<h1><img src='images/estextlogoLimeWhip450-8A.png' alt='Emerald Sequoia'/></h1>
+
+<?php } else { ?>
+
+<h1><img src='images/estextlogoLimeWhip450.png' alt='Emerald Sequoia'/></h1>
+
+<h2>Products for Apple iOS</h2>
+
+<?php } ?>
+
+<hr width = 75%>
+<br>
+<div class="shutdown-message-container">
+  <div class="shutdown-message">
+    <p>Emerald Sequoia LLC will be shutting down at the end of 2023. Please see our blog post
+    <a href="https://emeraldsequoia.com/esblog/2022/12/21/emerald-sequoias-future/">here</a>.
+    <p>
+    Thanks for all of your support over the past 15 years!</div>
+</div>
+<center>
+<table width=90% center>
+<tr align=top>
+<td align=center width=40%>
+  <table center>
+  <tr>
+	<th colspan=2 align=center width=50% height=30>Products for iPhone<sup><font size=-2>&#0174;</font></sup><br>and iPod touch<sup><font size=-2>&#0174;</font></sup>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="h/index.html"><img border=0 src="images/ec.png" alt="Chronometer icon" /></a></td>
+    <td align=left height=150><a href="h/index.html">Emerald<br>Chronometer</a><span class='notalink'><sup>&#0174;</sup>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="eg/index.html"><img border=0 src="images/eg.png" alt="Geneva icon" /></a></td>
+    <td align=left height=150><a href="eg/index.html">Emerald Geneva</a></td>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="et/index.html"><img border=0 src="images/et.png" alt="Time icon" /></a></td>
+    <td align=left height=150><a href="et/index.html">Emerald Time</a></td>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="ts/index.html"><img border=0 src="images/ts-iphone.png" alt="Timestamp icon" /></a></td>
+    <td align=left height=150><a href="ts/index.html">Emerald Timestamp</a></td>
+  </tr>
+  </table>
+</td>
+<td></td>
+<td width=40% valign=top>
+  <table center valign=center>
+  <tr align=center>
+	<th colspan=2 align=center width=50% height=30 >Products for iPad&nbsp;<font size=-1>™</font>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="h/echd.html"><img border=0 src="images/echd.png" alt="Chronometer HD icon" /></a></td>
+    <td align=left height=150><a href="h/echd.html">Emerald<br>Chronometer HD</a></td>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="eo/index.html"><img border=0 src="images/eo.png" alt="Observatory icon" /></a></td>
+    <td align=left height=150><a href="eo/index.html">Emerald<br>Observatory</a></td>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="et/index.html"><img border=0 src="images/et-ipad.png" alt="Time ipad icon" /></a></td>
+    <td align=left height=150><a href="et/index.html">Emerald<br>Time</a></td>
+  </tr>
+  <tr valign=center>
+    <td align=right height=150><a href="ts/index.html"><img border=0 src="images/ts-ipad.png" alt="Timestamp ipad icon" /></a></td>
+    <td align=left height=150><a href="ts/index.html">Emerald<br>Timestamp</a></td>
+  </tr>
+  </table>
+</td>
+</tr></table>
+</center>
+<br><br><br>
+
+<h3><a href="http://itunes.apple.com/us/artist/emerald-sequoia-llc/id284953673">Buy Now</a></h3>
+<h3><a href="support.html">Customer Support</a></h3>
+<div style="float:right"><a href="http://itunes.apple.com/us/artist/emerald-sequoia-llc/id284953673"><img src="images/App_Store_badge_0710.png" alt="app store logo" hspace=16 valign=top border=0 /></a></div>
+<h3><a href="authors.html">About Emerald Sequoia LLC</a></h3>
+<h3><a href="aw/index.html">Products for Wear OS by Google</a></h3>
+
+<h3><a href="press/index.html">Press Releases</a></h3>
+<h3><a href="http://emeraldsequoia.com/esblog/">Emerald Sequoia Blog</h3>
+<!-- <a href="http://www.facebook.com/pages/Emerald-Sequoia-LLC/319704374731458"><img src="images/fb.png" align=center> Our Facebook Page</a> -->
+<br><br>
+<div class="fb-like" data-href="http://www.facebook.com/pages/Emerald-Sequoia-LLC/319704374731458?sk=wall" data-send="true" data-width="450" data-show-faces="false" data-colorscheme="dark"></div>
+
+<hr size=4>
+<table width=100%><tr>
+<td align=left>Copyright&nbsp;&copy;&nbsp;2012, <span class='emerald'>Emerald Sequoia LLC</span>; last&nbsp;updated:&nbsp;2012&nbsp;Feb&nbsp;4.</td>
+<td align=right><font size=-1>Part of the <a href="http://www.iPhoneLife.com" _cke_saved_href="http://www.iPhoneLife.com">iPhoneLife Magazine</a> Vendor Network</font></td>
+</tr></table>
+</body>
+</html>

@@ -1,0 +1,206 @@
+body {
+    background-image: url('../images/dark_bg.jpg');
+    background-color: #303030;
+    font-family: Minion Web, Georgia, Times New Roman, serif;
+    font-style: normal;
+    font-size: medium;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size-adjust: .5;
+    color: #f0fff0;
+    text-align: left;
+    margin:5%;
+}
+
+img {
+    border: 0;
+}
+
+h1 {
+/*
+    font-family: "Copperplate Gothic Bold", Copperplate, Times New Roman, serif;
+    font-weight: bold;
+*/
+    font-family: "Copperplate Gothic Light", Copperplate, Times New Roman, serif;
+    font-weight: normal;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: "Copperplate Gothic Light", Copperplate, Times New Roman, serif;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: large;
+}
+
+h3 {
+    font-family: "Copperplate Gothic Light", Copperplate, Times New Roman, serif;
+    font-variant: small-caps;
+    text-align: left;
+    font-size: large;
+}
+
+dt {
+    color:#c0ffc0;
+    font-size: 12pt;
+}
+
+dd {
+    font-size: 10pt;
+}
+
+.notalink {
+    color: #d0f0d0;
+}
+
+a:link {
+    color: #d0f0d0;
+}
+
+a:visited {
+    color: #b0d0b0;
+}
+
+a:hover {
+    color: #c0e0c0;
+}
+
+.emerald {
+    color: #40ff40;
+}
+
+.available2x {
+    /* Low-res uses the original src */
+    /* Hi-res adds a "-2x" at the end of the filename */
+    font-family: 'image-set( url({src}), url({protocol}://{host}{directory}{filename}-2x.{ext}) 2x high-bandwidth )';
+    display:none;
+}
+
+.floatL {
+    float:left;
+    text-align:left;
+    color: #40ff40;
+}
+
+.floatR {
+    float:right;
+    text-align:right;
+    color: #40ff40;
+}
+
+.smaller {
+    font-size:10pt;
+}
+
+.smallest {
+    font-size:8pt;
+}
+
+#people {
+    color: #f0fff0;
+/*    color: white; */
+    text-align: left;
+}
+
+
+.shutdown-message-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shutdown-message {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #e0ffffe6;
+    color: black;
+    text-align: center;
+}
+
+.shutdown-message > p > a:link {
+    color: red;
+}
+
+.shutdown-message > p > a:visited {
+    color: red;
+}
+.device {
+    display:none;
+}
+.website {
+    display:inline;
+}
+.Chronometer {
+    display:inline;
+}
+.GenevaOnly {
+    display:none;
+}
+.Alexandria {
+    display:inline;
+}
+.Atlantis {
+    display:inline;
+}
+.AtlantisIV {
+    display:inline;
+}
+.Cairo {
+    display:inline;
+}
+.Chandra {
+    display:inline;
+}
+.Firenze {
+    display:inline;
+}
+.Geneva {
+    display:inline;
+}
+.Haleakala {
+    display:inline;
+}
+.Istanbul {
+    display:inline;
+}
+.London {
+    display:inline;
+}
+.MaunaKea {
+    display:inline;
+}
+.McAlester {
+    display:inline;
+}
+.Miami {
+    display:inline;
+}
+.Milano {
+    display:inline;
+}
+.OldGreenwich {
+    display:inline;
+}
+.Olympia {
+    display:inline;
+}
+.Paris {
+    display:inline;
+}
+.Terra {
+    display:inline;
+}
+.Thebes {
+    display:inline;
+}
+.Tombstone {
+    display:inline;
+}
+.Vienna {
+    display:inline;
+}

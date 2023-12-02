@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Moving Events From One Device To Another in Emerald Timestamp</title>
+ <meta name="viewport" content="width=device-width" />  <!-- for iphone -->
+ <link rel="apple-touch-icon" href="../images/eblogo57-1.png">
+ <link rel="shortcut icon" href="../images/GlyphBerry.png" type="image/png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../h/product.css" type="text/css" />
+</head>
+<body>
+<div class='floatL'>
+ <a href="../index.php">Home</a>&nbsp;&nbsp;
+ <a href="index.html">Timestamp</a>
+</div>
+<div class='floatR'>
+ <a href="http://itunes.apple.com/us/app/emerald-timestamp/id371935298?mt=8">Buy Now</a>
+</div>
+<br>
+<hr size=1>
+
+<h1>Moving Events From One Device To Another</h1>
+<p>
+
+<em>Please note:  Emerald Sequoia LLC does not endorse or support the following procedure.  We offer it as a possibility for those customers who really want existing events on a different device, and who no longer need events that may have already been captured on that other device (merging is not possible).</em>
+<p>
+There is no supported way to move events from one device to another.  However, some people have had success using a 3rd-party program (not affiliated with Emerald Sequoia LLC) called PhoneDisk for the Mac.  Please use this procedure at your own risk, and follow the suggestions to back up your devices and your data before starting.  <em>And please note that existing events on the destination device will be lost!!!</em>
+<p>
+<ol>
+<li>Make sure Emerald Timestamp is installed on both devices.</li>
+<li>Back up both devices using iTunes.</li>
+<li>Use Emerald Timestamp on each device to email yourself a copy of all events, so you have them in some format in case something goes wrong.</li>
+<li>Obtain a copy of the Mac program Phone Disk, and install it on your Mac.  At this writing, it can be found at <a href="http://www.macroplant.com">http://www.macroplant.com</a> <em>(Note again, this is not our product)</em>.</li>
+<li>If the destination device is running iOS 4.0 or later, reboot it (this will ensure that Timestamp is not running in the background and thus will not collide with the changes we will be making).</li>
+<li>Connect the device containing the events to be moved to the Mac.</li>
+<li>Wait a minute or so for Phone Disk to recognize it, then from the Phone Disk menu, select the device name, and then "Change Connection Root" => "Timestamp".</li>
+<li>If Phone Disk is working properly, it should mount a virtual disk on your Mac with the name of your device.  Navigate there; you should see several subfolders, including "Library" and "Documents".</li>
+<li>Navigate to Library => Preferences.  You should see a file called "com.emeraldsequoia.Timestamp.plist".  Copy that file somewhere on your Mac.</li>
+<li>Now connect your second device to the Mac (the one you want to copy the Timestamp events to).</li>
+<li>From the Phone Disk menu, select the second device name, and then "Change Connection Root" => "Timestamp". (If Timestamp is not there, ensure you've installed Timestamp on the device, and then retry).</li>
+<li>A new virtual disk should show up on your Mac with the name of your second device.</li>
+<li>On that new virtual disk, navigate to Library/Preferences.  Again you should see the file "com.emeraldsequoia.Timestamp.plist".  You'll be replacing this file with the one you copied from the other device; you may want to copy the existing one somewhere on your Mac first (note:  It is not possible to merge two event lists; any existing events on this device will be lost!).</li>
+<li>Copy the other device's file from where you copied it in step 9 into the new virtual disk's Library/Preferences folder.</li>
+<li>Now start Timestamp on the new device.  You should see the same events that are shown on the old device.  Again, your existing events on the new device will be lost.</li>
+</ol>
+
+<hr size=4>
+Copyright&nbsp;&copy;&nbsp;2011, <a href="../index.html"><span class='emerald'>Emerald Sequoia LLC</span></a>; last&nbsp;updated:&nbsp;2011&nbsp;Aug&nbsp;22
+</body>
+</html>

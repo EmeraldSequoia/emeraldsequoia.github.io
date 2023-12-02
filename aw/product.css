@@ -1,0 +1,252 @@
+body {
+    /* background-image: url('../images/dark_bg.jpg'); */
+    background-color: #c0c0c0;
+    /* font-family: Minion Web, Georgia, Times New Roman, serif; */
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: medium;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size-adjust: .5;
+    color: #000000;
+    text-align: left;
+    margin:2%;
+}
+
+h1 {
+/*
+    font-family: "Copperplate Gothic Bold", Copperplate, Times New Roman, serif;
+    font-weight: bold;
+*/
+    font-family: "Copperplate Gothic Light", Copperplate, Times New Roman, serif;
+    font-weight: normal;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: "Copperplate Gothic Light", Copperplate, Times New Roman, serif;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: large;
+}
+
+h3 {
+    font-family: "Copperplate Gothic Light", Copperplate, Times New Roman, serif;
+    font-variant: small-caps;
+    text-align: left;
+    font-size: large;
+}
+
+dt {
+    color:#000000;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+dd {
+    font-size: 10pt;
+}
+
+.notalink {
+    color: #000000;
+}
+
+a:link {
+    color: #0000a0;
+}
+
+a:visited {
+    color: #006060;
+}
+
+a:hover {
+    color: #000000;
+}
+
+.emerald {
+    color: #004000;
+}
+
+.available2x {
+    /* Low-res uses the original src */
+    /* Hi-res adds a "-2x" at the end of the filename */
+    font-family: 'image-set( url({src}), url({protocol}://{host}{directory}{filename}-2x.{ext}) 2x high-bandwidth )';
+    display:none;
+}
+
+.shutdown-message-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shutdown-message {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #e0ffffe6;
+    text-align: center;
+}
+
+.shutdown-message > p > a:link {
+    color: red;
+}
+
+.shutdown-message > p > a:visited {
+    color: red;
+}
+
+.wearosSubhead {
+    color: #505055;
+    font-size: 65%;
+    font-family: sans-serif;
+    font-variant: normal;
+    font-style: italic;
+}
+
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-left-spacer {
+    display: inline;
+    padding-left: 10px;
+}
+
+.fb-container {
+    display:inline;
+    padding-bottom: 6px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-img {
+    height: 28px;
+}
+
+.floatL {
+    float:left;
+    text-align:left;
+    color: #004000;
+}
+
+.floatR {
+    float:right;
+    text-align:right;
+    color: #004000;
+}
+
+.smaller {
+    font-size:10pt;
+}
+
+.smallest {
+    font-size:8pt;
+}
+
+#people {
+    color: #004000;
+/*    color: white; */
+    text-align: left;
+}
+
+.hero {
+    display:inline;
+}
+
+.heroImg {
+    max-width: 300px;
+}
+
+.device {
+    display:none;
+}
+.website {
+    display:inline;
+}
+.Chronometer {
+    display:inline;
+}
+.GenevaOnly {
+    display:none;
+}
+.Alexandria {
+    display:inline;
+}
+.Atlantis {
+    display:inline;
+}
+.AtlantisIV {
+    display:inline;
+}
+.Cairo {
+    display:inline;
+}
+.Chandra {
+    display:inline;
+}
+.Firenze {
+    display:inline;
+}
+.Geneva {
+    display:inline;
+}
+.Haleakala {
+    display:inline;
+}
+.Istanbul {
+    display:inline;
+}
+.London {
+    display:inline;
+}
+.MaunaKea {
+    display:inline;
+}
+.McAlester {
+    display:inline;
+}
+.Miami {
+    display:inline;
+}
+.Milano {
+    display:inline;
+}
+.OldGreenwich {
+    display:inline;
+}
+.Olympia {
+    display:inline;
+}
+.Paris {
+    display:inline;
+}
+.Terra {
+    display:inline;
+}
+.Thebes {
+    display:inline;
+}
+.Tombstone {
+    display:inline;
+}
+.Vienna {
+    display:inline;
+}
