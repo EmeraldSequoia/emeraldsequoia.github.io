@@ -5,7 +5,7 @@
 
 The new iPhone 4 support that Bill [just posted about](http://emeraldsequoia.com/esblog/2010/11/05/iphone-4-support/) required a whole new set of artwork, which is why it took so long for us to get this support out. Most simple apps simply use built-in widgets and graphic routines to render their displays, and those apps got Retina support simply by recompiling. (Our own apps Emerald Time and Emerald Timestamp fall into that category, and we supported the Retina display in those apps when the iPhone 4 came out). But the displays you see in Emerald Chronometer are rendered using a "parts list" of display objects that is generated with a custom external tool.
 
-For example, here's a parts list (this is really an OpenGL texture atlas, for the technically inclined) from Geneva's front side, at the old resolution: \[caption id="attachment\_54" align="aligncenter" width="512" caption="Old display texture atlas (\\"parts list\\")"\][![Old display 'parts list' or texture atlas](images/front-atlas-Z0.png "front-atlas-Z0")](http://emeraldsequoia.com/esblog/wp-content/uploads/2010/11/front-atlas-Z0.png)\[/caption\]
+For example, here's a parts list (this is really an OpenGL texture atlas, for the technically inclined) from Geneva's front side, at the old resolution: [![Old display 'parts list' or texture atlas](images/front-atlas-Z0.png "front-atlas-Z0")](http://emeraldsequoia.com/esblog/wp-content/uploads/2010/11/front-atlas-Z0.png)
 
 That image, and many more like it, are included with every copy of the app we ship.
 

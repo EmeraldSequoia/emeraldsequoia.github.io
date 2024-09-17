@@ -10,4 +10,4 @@ Just a quick note to update you on what we're doing at this moment:
 
 \- Steve
 
-\[caption id="attachment\_20" align="aligncenter" width="157" caption="\*\*Preliminary\*\*"\][![EC 3.1 world time watch](images/terra-157x300.png "Terra")](http://emeraldsequoia.com/esblog/wp-content/uploads/2010/04/terra.png)\[/caption\]
+[![EC 3.1 world time watch](images/terra-157x300.png "Terra")](http://emeraldsequoia.com/esblog/wp-content/uploads/2010/04/terra.png)

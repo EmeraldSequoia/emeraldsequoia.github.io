@@ -9,7 +9,7 @@ Just as with [support for the iPhone 4's Retina display](http://emeraldsequoia.c
 
 And just as before, that means that the app download got a lot bigger; it's now 164 MB to hold all of the new artwork. For comparison, here's the artwork for the three kinds of display devices we support:
 
-First the non-Retina iPhone and iPod touch: \[caption id="attachment\_54" align="aligncenter" width="512" caption="Old display texture atlas (\\"parts list\\")"\][![Old display 'parts list' or texture atlas](images/front-atlas-Z0.png "front-atlas-Z0")](http://emeraldsequoia.com/esblog/wp-content/uploads/2010/11/front-atlas-Z0.png)\[/caption\]  
+First the non-Retina iPhone and iPod touch: [![Old display 'parts list' or texture atlas](images/front-atlas-Z0.png "front-atlas-Z0")](http://emeraldsequoia.com/esblog/wp-content/uploads/2010/11/front-atlas-Z0.png)  
 
 Next the Retina iPhone and iPod touch in Chronometer, and the iPad in Chronometer HD: [![](images/front-atlas-Z1-crop.png "front-atlas-Z1 crop")](http://emeraldsequoia.com/esblog/wp-content/uploads/2010/11/front-atlas-Z1-crop.png)  
 
