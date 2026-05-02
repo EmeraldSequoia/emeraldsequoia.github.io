@@ -3,6 +3,10 @@
 
 ---
 
+## [Emerald Chronometer](https://github.com/EmeraldSequoia/Chronometer), [Emerald Observatory](https://github.com/EmeraldSequoia/Observatory), and [Emerald Timestamp](https://github.com/EmeraldSequoia/Timestamp) are on GitHub! Stay tuned to this space for more information soon!
+
+-----
+
 **\[Edit 2023/10/23: See specific update for Emerald Chronometer and Emerald Chronometer for the iPad [here](https://emeraldsequoia.com/esblog/2023/10/23/parting-gift-watches-from-the-developers-workbench/).\]**
 
 \[Edit: Please also see our updates [here](https://emeraldsequoia.com/esblog/2023/08/05/shutdown-update/) and [here](https://emeraldsequoia.com/esblog/2023/10/11/200/).\]
