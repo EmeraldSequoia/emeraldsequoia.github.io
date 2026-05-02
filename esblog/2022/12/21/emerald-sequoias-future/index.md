@@ -3,7 +3,7 @@
 
 ---
 
-## [Emerald Chronometer](https://github.com/EmeraldSequoia/Chronometer), [Emerald Observatory](https://github.com/EmeraldSequoia/Observatory), and [Emerald Timestamp](https://github.com/EmeraldSequoia/Timestamp) are on GitHub! Stay tuned to this space for more information soon!
+## \[2026-05-01\] [Emerald Chronometer](https://github.com/EmeraldSequoia/Chronometer), [Emerald Observatory](https://github.com/EmeraldSequoia/Observatory), and [Emerald Timestamp](https://github.com/EmeraldSequoia/Timestamp) are on GitHub! Stay tuned to this space for more information soon!
 
 -----
 
