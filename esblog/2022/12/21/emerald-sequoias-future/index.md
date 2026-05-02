@@ -3,7 +3,12 @@
 
 ---
 
-## [2026-05-01] Emerald Chronometer, Emerald Observatory, and Emerald Timestamp are on GitHub, and Emerald Chronometer and Emerald Observatory have new owners! Also, there is a web version of Emerald Chronometer at https://spucci.us/ecweb that will work on all devices, including Mac, Windows, Android, and ChromeOS! Stay tuned to this space for more information soon!
+## [2026-05-01] Emerald Chronometer, Emerald Observatory, and Emerald Timestamp are on GitHub, and Emerald Chronometer and Emerald Observatory have new owners!
+* **The new page** for the iOS version of Chronometer is [here](https://www.scapaflowllc.com/new-page-1)
+* Emerald Chronometer has **a new web version**, that will work on all devices, including Mac, Windows, Android, and ChromeOS!
+    * Run it directly [here](https://spucci.us/ecweb/)
+    * Or download it to your computer and run it directly from there (instructions at GitHub [here](https://github.com/EmeraldSequoia/chronometer-web))
+
 -----
 
 **\[Edit 2023/10/23: See specific update for Emerald Chronometer and Emerald Chronometer for the iPad [here](https://emeraldsequoia.com/esblog/2023/10/23/parting-gift-watches-from-the-developers-workbench/).\]**
