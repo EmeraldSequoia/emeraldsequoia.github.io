@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unofficial status and repository for legacy apps and materials of Emerald Sequoia LLC">
+    <title>Unofficial Emerald Sequoia app status</title>
+    <link rel="icon" type="image/png" href="ecweb/apple-touch-icon.png">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            background: #142314; /* Dark green */
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #ccc;
+        }
+
+        /* ── layout ── */
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 64px 32px 80px;
+        }
+
+        /* ── header / title ── */
+        header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #e0d8c8;
+            margin: 0 0 8px;
+            line-height: 1.2;
+        }
+
+        header .tagline {
+            font-size: 14px;
+            color: #776;
+            margin: 0;
+            font-style: italic;
+        }
+
+        /* ── section headings ── */
+        .section-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #787; /* Slightly greener grey */
+            margin: 0 0 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #2a442a;
+        }
+
+        /* ── about card ── */
+        .about-card {
+            background: linear-gradient(145deg, #223a22 0%, #142314 100%);
+            border: 1px solid #2a442a;
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 48px;
+            line-height: 1.7;
+            font-size: 15px;
+            color: #bbc;
+        }
+
+        .about-card a {
+            color: #8fa; /* Green-blue */
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .about-card a:hover {
+            color: #afd;
+            text-decoration: underline;
+        }
+
+        .about-card p {
+            margin: 0 0 12px;
+        }
+
+        .about-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ── apps grid ── */
+        .apps-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .app-card {
+            flex: 1 1 300px;
+            background: linear-gradient(145deg, #223a22 0%, #142314 100%);
+            border: 1px solid #2a442a;
+            border-radius: 16px;
+            padding: 28px 24px 24px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+            border-color: #447a44;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .app-card .thumb {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+        }
+
+        .app-card h3 {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #e0d8c8;
+            margin: 0 0 8px;
+        }
+
+        .app-card .desc {
+            font-size: 13px;
+            color: #887;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ── simple text section ── */
+        .text-section {
+            margin-bottom: 48px;
+            color: #bcc;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .text-section a {
+            color: #8fa;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .text-section a:hover {
+            color: #afd;
+            text-decoration: underline;
+        }
+
+        /* ── iframe card ── */
+        .iframe-card {
+            background: linear-gradient(145deg, #223a22 0%, #142314 100%);
+            border: 1px solid #2a442a;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 452px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .iframe-card:hover {
+            transform: translateY(-4px);
+            border-color: #447a44;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+        }
+
+        .iframe-card iframe {
+            pointer-events: none;
+        }
+
+        /* ── ornamental divider ── */
+        .end-divider {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 48px 0 49px;
+            color: #3a5a3a;
+        }
+
+        .end-divider::before {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, #3a5a3a, transparent);
+        }
+
+        .end-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #3a5a3a);
+        }
+
+        .end-divider .ornament {
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .iframe-card .iframe-title {
+            margin: 0 0 16px 0;
+            font-size: 13px;
+            color: #787;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* ── simple lists ── */
+        .item-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 48px 0;
+        }
+
+        .item-list > li {
+            background: rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+        }
+
+        .item-list > li strong {
+            font-size: 16px;
+            color: #e0d8c8;
+            font-weight: 600;
+        }
+
+        .item-list a {
+            color: #8fa;
+            text-decoration: underline;
+            text-decoration-color: rgba(136, 255, 170, 0.3);
+            text-underline-offset: 3px;
+            font-size: 16px;
+            transition: color 0.15s, text-decoration-color 0.15s;
+        }
+
+        .item-list a:hover {
+            color: #afd;
+            text-decoration-color: rgba(170, 255, 221, 0.7);
+        }
+
+        .item-list a[target="_blank"]::after {
+            content: ' \2197';
+            font-size: 12px;
+            opacity: 0.5;
+        }
+
+        .item-list p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            color: #bcc;
+            line-height: 1.5;
+        }
+
+        .item-list .doc-link {
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .link-list li::before {
+            content: '›';
+            color: #5a7a5a;
+            margin-right: 6px;
+            font-weight: bold;
+        }
+
+        .link-list li {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        /* ── footer ── */
+        footer {
+            text-align: center;
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid #2a442a;
+            font-size: 12px;
+            color: #454;
+        }
+
+        /* ── responsive ── */
+        @media (max-width: 480px) {
+            .page {
+                padding: 40px 20px 60px;
+            }
+
+            header h1 {
+                font-size: 24px;
+                letter-spacing: 4px;
+            }
+
+            .about-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <header>
+            <h1>Emerald Sequoia<br> app status</h1>
+            <p class="tagline">Unofficial status and repository for legacy apps and materials of Emerald Sequoia LLC</p>
+        </header>
+
+        <!-- About -->
+        <div class="section-title">About</div>
+        <div class="about-card">
+            <p>
+                This is an unofficial archive containing materials from the original company Emerald Sequoia LLC, which is now shut down.
+            </p>
+            <p>
+                While maintained in part by one of the former co-founders (<a href="https://github.com/slpucci" target="_blank" rel="noopener">slpucci</a>),
+                this is not an official company site. Its purpose is to provide links both to relaunched versions and to archive materials for the original apps.
+            </p>
+        </div>
+
+        <!-- Relaunched Apps -->
+        <div class="section-title">Relaunched Apps</div>
+        <ul class="item-list">
+            <li>
+                <strong>Emerald Chronometer for iOS</strong>
+                <p>Maintenance of the original iOS app has been kindly taken over by Scapa Flow LLC.</p>
+                <ul class="link-list">
+                    <li><a href="https://www.scapaflowllc.com/new-page-1" target="_blank" rel="noopener">New app web page</a></li>
+                    <li><a href="https://emeraldsequoia.com/h/index.html" target="_blank" rel="noopener">Archived documentation</a></li>
+                    <li><a href="https://github.com/EmeraldSequoia/Chronometer" target="_blank" rel="noopener">Original code on GitHub</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>Emerald Chronometer for the web (any OS)</strong>
+                <p>This version is intended for OS's other than iOS, and will run in a browser on Android, MacOS, Windows, or ChromeOS (see Terra embed below).</p>
+                <ul class="link-list">
+                    <li><a href="https://spucci.us/ecweb/" target="_blank" rel="noopener">Run the web app</a></li>
+                    <li><a href="https://github.com/EmeraldSequoia/chronometer-web" target="_blank" rel="noopener">Code on GitHub</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>Emerald Observatory</strong>
+                <p>Coming soon!</p>
+                <ul class="link-list">
+                    <li><a href="https://emeraldsequoia.com/eo/index.html" target="_blank" rel="noopener">Archived documentation</a></li>
+                    <li><a href="https://github.com/EmeraldSequoia/Observatory" target="_blank" rel="noopener">Original code on GitHub</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Open Source Apps -->
+        <div class="section-title">Open Source Apps</div>
+        <ul class="item-list">
+            <li>
+                <strong>Emerald Timestamp</strong>
+                <ul class="link-list">
+                    <li><a href="https://emeraldsequoia.com/ts/index.html" target="_blank" rel="noopener">Archived documentation</a></li>
+                    <li><a href="https://github.com/EmeraldSequoia/Timestamp" target="_blank" rel="noopener">Original code on GitHub</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Retired Apps -->
+        <div class="section-title">Retired Apps</div>
+        <ul class="item-list">
+            <li>
+                <strong>Emerald Geneva</strong>
+                <p>This app is a strict subset of Emerald Chronometer, showing only the Geneva face from that app.</p>
+            </li>
+            <li>
+                <strong>Emerald Time</strong>
+                <ul class="link-list">
+                    <li><a href="https://emeraldsequoia.com/et/index.html" target="_blank" rel="noopener">Archived documentation</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>Emerald Chronometer for Wear OS by Google</strong>
+                <ul class="link-list">
+                    <li><a href="https://emeraldsequoia.com/aw/index.html" target="_blank" rel="noopener">Archived documentation</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Emerald Sequoia Website -->
+        <div class="section-title">Emerald Sequoia Website</div>
+        <ul class="item-list">
+            <li>
+                <strong>This website</strong>
+                <ul class="link-list">
+                    <li><a href="https://github.com/EmeraldSequoia/emeraldsequoia.github.io" target="_blank" rel="noopener">GitHub source</a></li>
+                    <li><a href="index_orig.html">Original website</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="end-divider"><span class="ornament">🌲</span></div>
+
+        <a class="iframe-card" href="ecweb/terra.html" target="_blank" rel="noopener">
+            <div class="iframe-title">TERRA</div>
+            <iframe
+              src="ecweb/terra.html?embed=1"
+              style="width: 400px; height: 400px; border: none; border-radius: 8px;"
+              loading="lazy"
+            ></iframe>
+        </a>
+
+    </div>
+</body>
+
+</html>
