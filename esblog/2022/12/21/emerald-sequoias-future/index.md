@@ -5,7 +5,7 @@
 
 ## [2026-05-01] Emerald Chronometer, Emerald Observatory, and Emerald Timestamp are on GitHub, and Emerald Chronometer and Emerald Observatory have new owners!
 
-See current status at the new home page at https://emeraldsequoia.com
+See current status at the new home page at [https://emeraldsequoia.com](https://emeraldsequoia.com).
 
 -----
 
