@@ -1,13 +1,11 @@
 # Emerald Sequoia's future
-**2022-12-21**
+~**2022-12-21**~
 
 ---
 
 ## [2026-05-01] Emerald Chronometer, Emerald Observatory, and Emerald Timestamp are on GitHub, and Emerald Chronometer and Emerald Observatory have new owners!
-* **The new page** for the iOS version of Chronometer is [here](https://www.scapaflowllc.com/new-page-1)
-* Emerald Chronometer has **a new web version**, that will work on all devices, including Mac, Windows, Android, and ChromeOS!
-    * Run it directly [here](https://spucci.us/ecweb/)
-    * Or download it to your computer and run it directly from there (instructions at GitHub [here](https://github.com/EmeraldSequoia/chronometer-web))
+
+See current status at the new home page at https://emeraldsequoia.com
 
 -----
 
